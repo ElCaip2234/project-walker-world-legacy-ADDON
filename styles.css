@@ -1,0 +1,448 @@
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(9, 9, 9);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hrlogo hr {
+    border: none;                           /* remove o estilo padrão (ex:cor padrão) */
+    height: 3px;              
+    background-color: rgb(152, 5, 5);   
+    width: 81%;                             /* largura da linha */
+    margin: 20px auto;                      /* centraliza horizontalmente */
+}
+
+header .logo img {
+    width: 50%;
+    height: auto;
+    transform: translateX(50%)
+}
+
+#creditos-colunas {
+  display: flex;
+  justify-content: space-between; /* separa os blocos */
+  align-items: flex-start;        /* alinha pelo topo */
+  gap: 40px;                      /* espaço entre colunas */
+  flex-wrap: wrap;                /* permite quebrar em telas menores */
+}
+
+/* coluna da lista */
+#links-superiores {
+  flex: 1;
+}
+
+/* coluna dos logos */
+#creditoslogos {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;               /* desce o bloco */
+  transform: translateX(-80px);   /* move visualmente para a esquerda */
+}
+
+@media (max-width: 768px) {
+  #creditos-colunas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #creditoslogos {
+    flex: 1;
+    align-items: center;
+  }
+}
+
+#logo-discord img {
+  height: 40px;
+  width: auto;
+}
+
+#logo-elcaip img {
+  height: 40px;
+  width: auto;
+}
+
+#logo-gabriel img {
+  height: 40px;
+  width: auto;
+}
+
+section#créditos {
+  width: 80%;                /* largura menor que a tela */
+  margin: 5px auto;         /* centraliza horizontalmente */
+  padding: 5px;             /* espaço interno */
+  background-color: #ffffff;    /* fundo escuro */
+  border-radius: 15px;       /* cantos arredondados */
+  position: relative;
+}
+
+section#inftec {
+  width: 80%;                /* largura menor que a tela */
+  margin: 5px auto;         /* centraliza horizontalmente */
+  padding: 5px;             /* espaço interno */
+  background-color: #111;    /* fundo escuro */
+  border-radius: 15px;       /* cantos arredondados */
+  position: relative;
+}
+
+#descrição {
+  width: 80%;                /* largura menor que a tela */
+  margin: 5px auto;         /* centraliza horizontalmente */
+  padding: 5px;             /* espaço interno */
+  background-color: #111;    /* fundo escuro */
+  border-radius: 15px;       /* cantos arredondados */
+  position: relative;
+}
+
+#descrição h3 {
+  text-align: center;
+  gap: 5px;
+}
+
+#descrição p {
+  text-align: justify;
+  padding: 20px;
+}
+
+.imgaddondescrição {
+  text-align: center; /* centraliza tudo dentro da div */
+  display: grid;
+  row-gap: 10px; /* controla o espaço vertical entre os pares */
+}
+
+.imgaddondescrição img {
+  width: 50%;  /* tamanho da imagem */
+  height: auto;
+}
+
+#img1-2 {
+  display: flex;
+  justify-content: center;   /* centraliza horizontalmente */
+  align-items: center;
+  gap: 10px;                  /* distância exata entre as imagens */
+}
+
+#img1-2 img {
+  width: auto;               /* remove o 50% herdado */
+  max-width: 500px;          /* controla tamanho (ajuste conforme necessário) */
+  height: auto;
+  display: block;
+}
+
+#img3-4 {
+  display: flex;
+  justify-content: center;   /* centraliza horizontalmente */
+  align-items: center;
+  gap: 10px;                  /* distância entre as imagens */
+  margin-bottom: 10px;
+}
+
+#img3-4 img {
+  width: 500px;              /* tamanho específico para este par */
+  height: auto;
+  display: block;
+}
+
+#img5-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2px;
+}
+
+#img5-6 img {
+  width: 500px;              /* tamanho diferente deste par */
+  height: auto;
+  display: block;
+}
+
+#img7-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#img7-8 img {
+  width: 500px;              /* ajuste o tamanho conforme necessário */
+  height: auto;
+  display: block;
+}
+
+#img9-10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#img9-10 img {
+  width: 500px;              /* ajuste o tamanho conforme necessário */
+  height: auto;
+  display: block;
+}
+
+#img11-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#img11-12 img {
+  width: 500px;              /* ajuste o tamanho conforme necessário */
+  height: auto;
+  display: block;
+}
+
+#img13-14 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#img13-14 img {
+  width: 500px;              /* ajuste o tamanho conforme necessário */
+  height: auto;
+  display: block;
+}
+
+#img15-16 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#img15-16 img {
+  width: 500px;              /* ajuste o tamanho conforme necessário */
+  height: auto;
+  display: block;
+}
+
+
+#creditoslogos {
+  display: inline-flex;      /* coloca os blocos lado a lado */
+  flex-direction: column;
+  gap: 20px;                 /* espaço entre cada bloco */
+  align-items: flex-start;   /* alinha os blocos pelo topo */
+}
+
+#creditosbackground h3 {
+  text-align: center;
+  gap: 5px;
+}
+
+#inftecbackground h3 {
+  text-align: center;
+  gap: 5px;
+}
+
+#infgeral {
+  text-align: center;
+  font-weight: bold;
+  padding-left: 1px;
+  line-height: 45px; /* espaçamento entre linhas */
+  padding: 30px;
+  margin-top: 1px;
+}
+
+/* Alinha imagem + texto dentro de cada bloco */
+.logo-dc a,
+.logo-yt a {
+  display: inline-flex;      /* coloca imagem e texto lado a lado */
+  align-items: center;       /* centraliza verticalmente */
+  gap: 20px;                 /* espaço entre imagem e texto */
+  text-decoration: none;
+  padding: 0 0;
+  color: #ffffff;
+}
+
+#links-superiores li {
+  margin-bottom: 10px; /* distância de 10px entre cada linha */
+  list-style: none;
+}
+
+
+.nome {
+  font-weight: bold;
+  padding-left: 1px;
+}
+
+.cargo {
+  font-weight: bold;
+}
+
+.traco1 {
+  display: inline-block;
+  width: 150px;        /* largura fixa do traço */
+  border-bottom: 1px solid #ffffff;
+}
+
+.traco2 {
+  display: inline-block;
+  width: 100px;        /* largura fixa do traço */
+  border-bottom: 1px solid #ffffff; 
+}
+
+.traco3 {
+  display: inline-block;
+  width: 132px;        /* largura fixa do traço */
+  border-bottom: 1px solid #ffffff;
+}
+
+.traco4 {
+  display: inline-block;
+  width: 155px;        /* largura fixa do traço */
+  border-bottom: 1px solid #ffffff;
+}
+
+.traco5 {
+  display: inline-block;
+  width: 100px;        /* largura fixa do traço */
+  border-bottom: 1px solid #ffffff;
+}
+
+.traco6 {
+  display: inline-block;
+  width: 128px;        /* largura fixa do traço */
+  border-bottom: 1px solid #ffffff;
+}
+
+#changelog {
+  width: 80%;
+  margin: 5px auto;
+  padding: 5px;
+  background-color: #111;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#changelog h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+#changelog h4,
+#changelog h5 {
+  color: #ffffff;
+  margin-top: 20px; /* mantém espaçamento entre seções */
+}
+
+/* Listas centralizadas como bloco, texto alinhado à esquerda */
+#changelog ul {
+  display: inline-block;       /* centraliza a lista como bloco */
+  text-align: left;            /* texto alinhado dentro da lista */
+  list-style-type: disc;       /* garante bolinhas padrão */
+  list-style-position: outside;/* marcador fora, alinhamento consistente */
+  padding-left: 1.25rem;       /* recuo para o marcador */
+  margin: 8px 0;               /* espaço vertical entre listas */
+}
+
+/* Espaçamento consistente entre itens */
+#changelog li {
+  background-color: #222;   /* fundo escuro */
+  color: #eee;              /* cor do texto */
+  padding: 6px 10px;        /* espaço interno */
+  margin: 5px 0;            /* espaço entre itens */
+  border-radius: 4px;       /* cantos arredondados */
+}
+
+
+/* Opcional: cor das bolinhas (sem perder alinhamento) */
+#changelog li::marker {
+  color: rgb(152, 5, 5);
+}
+
+#downloads {
+  text-align: center; /* centraliza o título h3 */
+}
+
+#downloads h3 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* container do texto + imagem */
+.lootlabs-header,
+.linkvertise-header {
+  display: flex;
+  justify-content: center;   /* centraliza horizontalmente */
+  align-items: center;       /* alinha verticalmente */
+  gap: 10px;                 /* espaço entre texto e imagem */
+  margin-bottom: 10px;
+}
+
+.lootlabs-header p,
+.linkvertise-header p {
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.lootlabs-header img {
+  height: 40px;
+  width: auto;
+
+}
+.linkvertise-header img {
+  height: 30px; /* ajusta tamanho da imagem */
+  width: auto;
+}
+
+#lootlabs,
+#linkvertise {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* sobrescreve apenas o linkvertise */
+#linkvertise {
+  align-items: center;
+}
+
+#lootlabs button,
+#linkvertise button {
+  width: 200px;             /* largura fixa opcional */
+  margin: 5px 0;            /* espaço entre botões */
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+#lootlabs button:hover,
+#linkvertise button:hover {
+  background-color: #555;   /* efeito hover */
+}
+
+.btn {
+  display: block;            /* cada link ocupa uma linha */
+  width: 200px;              /* largura fixa */
+  margin: 8px auto;          /* centraliza horizontalmente */
+  padding: 10px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;     /* remove sublinhado */
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #555;    /* efeito hover */
+}
