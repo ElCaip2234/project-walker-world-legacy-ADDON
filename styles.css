@@ -74,7 +74,7 @@ section#créditos {
   width: 80%;                /* largura menor que a tela */
   margin: 5px auto;         /* centraliza horizontalmente */
   padding: 5px;             /* espaço interno */
-  background-color: #111;    /* fundo escuro */
+  background-color: #ffffff;    /* fundo escuro */
   border-radius: 15px;       /* cantos arredondados */
   position: relative;
 }
