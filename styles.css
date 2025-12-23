@@ -446,3 +446,27 @@ section#inftec {
 .btn:hover {
   background-color: #555;    /* efeito hover */
 }
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* texto menor em celular */
+  }
+
+  .imgaddondescrição {
+    display: block; /* imagens em coluna */
+  }
+
+  .imgaddondescrição img {
+    width: 100%; /* ocupa toda largura da tela */
+    margin-bottom: 10px;
+  }
+
+  #creditoslogos {
+    transform: none; /* remove deslocamento */
+    align-items: center;
+  }
+
+  .btn {
+    width: 90%; /* botões ocupam quase toda tela */
+  }
+}
